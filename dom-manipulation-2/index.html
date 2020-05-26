@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+ 
+body{
+    font-family: Arial,sans-serif;
+    margin-bottom: 500px;
+}
+div{
+    background: linear-gradient(45deg,lightsalmon,lightgreen);
+    text-align: center;
+    padding: 15px;
+    margin: 15px auto;
+    width: 400px;
+}
+input[type='text'] , select , input[type='password']{
+    font-size: 25px;
+}
+textarea{
+    font-size: 20px;
+}
+h3{
+    margin: 10px 0;
+    font-size: 35px;
+}
+p{
+    font-size: 18px;
+}
+span{
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+}
+input[type='range']{
+    width: 300px;
+}
+table{
+    width: 100%;
+}
+</style>
+
+<body>
+
+    <!-- keyup event -->
+    <div>
+        <form>
+            <input type="text" id="text-box">
+            <h3 id="display-text"></h3>
+        </form>
+    </div>
+
+    <!-- Change Event -->
+    <div>
+        <form>
+            <select id="select-box">
+                <option value="">Select an option</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+                <option value="jquery">JQuery</option>
+                <option value="bootstrap">Bootstrap</option>
+            </select>
+            <h3 id="selected-option"></h3>
+        </form>
+    </div>
+
+      <!-- SMS App -->
+      <div>
+        <form>
+            <textarea rows="4" cols="30" id="text-area" maxlength="100"></textarea>
+            <p>The characters remaining : <span id="text-count"></span>/100</p>
+        </form>
+    </div>
+
+    <!-- Change Password -->
+    <div>
+        <form>
+            <input type="password" id="password-box">
+            <br>
+            <input type="checkbox" id="check-box"> Show Password
+        </form>
+    </div>
+
+    <!-- input Event on Range -->
+    <div>
+        <form>
+            5000<input type="range" id="range" min="5000" max="500000">500000
+            <h3 id="amount"></h3>
+        </form>
+    </div>
+
+    <!-- inner HTML -->'
+    <div>
+        <h3 id="h3-tag">
+
+        </h3>
+    </div>
+
+    <!-- Display Table of content -->
+    <div>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>DESIGNATION</th>
+                    <th>ACTIVE</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    
+      
+
+    <script src="util.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
